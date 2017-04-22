@@ -1,0 +1,76 @@
+page-home {
+
+  #wizardCadastro
+    {
+      background-color: #E9EAEE;
+    }
+
+#labelCelular
+      {
+        color: #F58634;
+      }
+
+#inpCelular
+          {
+            width: 85%;
+            background-color: #FFFFFF;
+            margin: auto;
+          }
+
+#btnContinuarTelefone
+            {
+              background-color: #F58634;
+                width: 95%;
+                margin: auto;
+            }
+
+#labelNome
+           {
+            color: #F58634;
+                  }
+
+
+
+              #inpNome
+                        {
+                          width: 45%;
+                          background-color: #FFFFFF;
+                          float:left;
+
+                        }
+
+                        #inpSobreNome
+                                  {
+                                    width: 45%;
+                                    background-color: #FFFFFF;
+                                    float:right;
+
+                                  }
+
+                                  #btnContinuarNome
+                                    {
+                                      background-color: #F58634;
+                                        width: 95%;
+                                        margin: auto;
+                                    }
+
+#labelNascimento
+      {
+        color: #F58634;
+      }
+
+#inpDataNascimento
+          {
+            width: 85%;
+            background-color: #FFFFFF;
+            margin: auto;
+          }
+
+#btnContinuarNascimento
+            {
+              background-color: #F58634;
+                width: 95%;
+                margin: auto;
+            }                                    
+
+}

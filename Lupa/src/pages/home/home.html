@@ -1,0 +1,66 @@
+<ion-content class="tutorial-page">
+
+  <ion-slides pager id='wizardCadastro'>
+
+    <ion-slide>
+
+      <h2 class="slide-title" id='labelCelular'>Qual o número do seu celular?</h2>
+      <ion-input id='inpCelular' type="text" placeholder="Informe o número do seu celular"></ion-input>
+
+      <ion-label>Você usará esse número quando fizer login</ion-label>
+
+      <button ion-button large class="button button-block" id='btnContinuarTelefone' >Continuar</button>
+
+    </ion-slide>
+
+    <ion-slide>
+
+      <h2 class="slide-title" id='labelNome'>Qual o seu nome?</h2>
+      <ion-input id='inpNome' type="text" placeholder="Nome"></ion-input>
+      <ion-input id='inpSobreNome' type="text" placeholder="Sobrenome"></ion-input>
+
+      <ion-label>O uso verdadeiro do seu nome garante</ion-label>
+
+      <button ion-button large class="button button-block" id='btnContinuarNome' >Continuar</button>
+
+    </ion-slide>
+
+    <ion-slide>
+
+      <h2 class="slide-title" id='labelNascimento'>Quando você nasceu?</h2>
+      <ion-item>
+        <ion-label>Data de Nascimento:</ion-label>
+        <ion-datetime displayFormat="DD/MM/YYYY" pickerFormat="DD-MM-YYYY" [(ngModel)]="myDate"></ion-datetime>
+      </ion-item>
+
+      <ion-label>Você pode escolher quem pode ver</ion-label>
+
+      <button ion-button large class="button button-block" id='btnContinuarNascimento'>Continuar</button>
+
+    </ion-slide>
+
+
+    <ion-slide *ngFor="let slide of slides">
+      <ion-toolbar>
+        <ion-buttons end>
+          <button ion-button color="primary">Skip</button>
+        </ion-buttons>
+      </ion-toolbar>
+      <img [src]="slide.image" class="slide-image" />
+      <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+      <p [innerHTML]="slide.description"></p>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-toolbar>
+      </ion-toolbar>
+      <img src="assets/img/ica-slidebox-img-4.png" class="slide-image" />
+      <h2 class="slide-title">Ready to Play?</h2>
+      <button ion-button large clear icon-right color="primary">
+        Continue
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-slide>
+
+  </ion-slides>
+</ion-content>
